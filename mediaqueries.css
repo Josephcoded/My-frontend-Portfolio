@@ -117,5 +117,28 @@
   .about-containers{
     display: flex;
   }
+  .circle-container {
+    position: relative;
+    width: 12em;
+    height: 12em;
+    padding: 2.8em;
+    /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
+    border: solid 1px;
+    border-radius: 50%;
+    margin: 1.75em auto 0;
+}
+.circle-container a {
+    display: block;
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 2em; height: 2em;
+    margin: -1em;
+}
+  .circle-container img { display: block; width: 100%; }
+.html-logo { transform: rotate(270deg) translate(7em) rotate(-270deg); }
+.css-logo { transform: rotate(200deg) translate(7em) rotate(-200deg); }
+.Bootstrap-logo { transform: rotate(135deg) translate(7em) rotate(-135deg); }
+.javascript-logo { transform: rotate(45deg) translate(7em) rotate(-45deg); }
+.react-logo { transform: rotate(340deg) translate(7em) rotate(-270deg); }
 }
 
