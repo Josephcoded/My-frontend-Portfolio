@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Coded's portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class ="logo">Joseph Gaisie-Cann Jnr</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+     </nav>
+     <nav id="hamburger-nav">
+        <div class="logo">Joseph Gaisie-Cann Jnr</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="about" onclick="toggleMenu()">About</a></li>
+                <li><a href="experience" onclick="toggleMenu()">experience</a></li>
+                <li><a href="projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="contact" onclick="toggleMenu()">Contact me</a></li>
+            </div>
+        </div>
+     </nav>
+     <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/JosephProfilepic.png" alt="Joseph Gaisie-cann profile picture " class="wdn-stretch rounded-corners">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">My name is</p>
+            <h1 class="title">Joseph</h1>
+            <p class="section__text__p2">Aspiring software developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('assets/current_software_cv (1).pdf')">
+                    Download cv
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    contact
+                </button>
+            </div>
+            
+            <div id="socials-container">
+                <img src="./assets/github.png" alt="My github" class="icon"
+                onclick="location.href='https://github.com/Josephcoded'">
+                <img src="./assets/linkedin.png" alt="My github" class="icon"
+                onclick="location.href='https:www.linkedin.com/in/josephcoded'">
+            </div>
+        </div>
+     </section>
+     <section id="about">
+        <p class="section__text__p1">My journey so far</p>
+        <h1 class="title">About me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/PIcture-of-me.png"
+                alt="profile pic" class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                   <div class="details-container">
+                    <img src="./assets/experience.png" alt="experience icon"
+                    class="icon about-icon" /> 
+                    <h3>Experience</h3>
+                    <p>1+ years<br /> Self-taught front-end development</p>
+                   </div>
+                   <div class="details-container">
+                    <img 
+                    src="./assets/education.png" 
+                    alt="experience icon"
+                    class="icon about-icon" /> 
+                    <h3>Education</h3>
+                    <p>9 GCSE's 9-5 including maths and english <br /> Business studies DDM</p> 
+                </div>
+            </div>
+            <div class="text-container">
+                <p class="paragraph-text"> In the last year, I began teaching myself different components of front-developement, I had started with html
+                    and slowly with the help of guided projects and online courses I managed to grasp the understanding of other languages
+                    such as CSS and Javascript and how to use frameworks. I am currently sharpening my skills by working on personal projects in 
+                    hopes to one become a front-end developer and eventually a Software developer
+                </p>
+            </div>
+        </div>
+        <img 
+        src="./assets/arrow.png" 
+        alt="arrow" 
+        class="icon arrow" 
+        onclick="location.href='./#experience'">
+     </section>
+    <section id="experience">
+        <p class="section__text__p1">Take a look at my </p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-container">
+            <h2 class="experinece-sub-title">
+                front-end skills
+            </h2>
+            <div class='circle-container'>
+                <a class='html-logo'><img src='assets/HTML-Logo.png'></a>
+                <a class='css-logo'><img src='assets/CSS-LOGO.png'></a>
+                <a  class='Bootstrap-logo'><img src='assets/Bootstrap_logo.svg.png'></a>
+                <a  class='javascript-logo'><img src='assets/JavaScript-Logo.webp'></a>
+                <a  class='react-logo'><img src='assets/React-icon.svg.png'></a>
+
+            </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <footer>
+            <div class="contact-me">
+                <p class="section__text__p1">Get in touch</p>
+                <h1 class="title">Contact me</h1>
+                <div class="information-container">
+                    <div class="content-upper-container">
+                    <div class="content-info-container">
+                        <img src="assets/email.png" class="icon contact-icon email-icon">
+                        <p><a href="mailto: Josephcannuk@outlook.com" class="email-link">Josephcannuk@outlook.com</a></p>
+                    </div>
+                    <div class="content-info-container">
+                        <img src="assets/linkedin.png" class="icon contact-icon">
+                        <p><a onclick="location.href='https://www.linkedin.com/feed/'" class='linkedIn-link'>linkedin</a></p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
