@@ -460,3 +460,13 @@ section {
   display: flex;
 }
 
+.underline{
+  color: blue;
+  font-style: italic;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.underline:hover{
+  text-decoration: none;
+}
